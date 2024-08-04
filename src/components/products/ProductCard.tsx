@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               <h3 className="text-md font-semibold">{product.name}</h3>
               <p className="text-sm">{product.description}</p>
               <div className="mt-2 mb-4"> {/* Margens para espaçar o preço */}
-                <span className="text-4xl font-bold">{`R$ ${product.price.toFixed(2)}`}</span>
+                <span className="text-3xl font-bold text-tinks-cake">{`R$ ${product.price.toFixed(2)}`}</span>
               </div>
             </div>
             <div className="flex items-center justify-center mt-4">  {/* Margin-top para empurrar os controles para baixo */}

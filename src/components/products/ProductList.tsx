@@ -8,13 +8,13 @@ interface ProductListProps {
 }
 
 const ProductList: React.FC<ProductListProps> = ({ products }) => {
-  return (
-    <div className=" p-4 grid grid-cols-5 gap-6">
-      {products.map(product => (
-        <ProductCard key={product.id} product={product} />
-      ))}
-    </div>
-  );
-};
-
-export default ProductList;
+    return (
+      <div className="p-4 grid grid-cols-3 md:grid-cols-4 gap-8"> {/* Ajuste nas colunas e no gap */}
+        {products.map(product => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+    );
+  };
+  
+  export default ProductList;

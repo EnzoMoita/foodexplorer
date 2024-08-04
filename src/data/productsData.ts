@@ -1,6 +1,8 @@
 import parmaImage from '../images/parma.svg';
 import spaguettiImage from '../images/SpaguettiGambe.svg';
 import torradasImage from '../images/TorradasParma.svg';
+import ceasarImage from '../images/salad.svg';
+import prune from '../images/prune.svg'
 
 const products = [
   {
@@ -23,6 +25,20 @@ const products = [
     description: "Presunto de parma e rúcula em um pão com fermentação natural",
     price: 25.97,
     image: torradasImage
+  },
+  {
+    id: 4,
+    name: "Salada Ceasar",
+    description: "Salada com frango assado e maionese e um molho especial para o ceasar",
+    price: 29.97,
+    image: ceasarImage
+  },
+  {
+    id: 5,
+    name: "Prune",
+    description: "Prune com tomate e mostarda, é delicioso e serve até 2 pessoas",
+    price: 20.97,
+    image: prune
   }
 ];
 
