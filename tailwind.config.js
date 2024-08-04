@@ -13,6 +13,7 @@ export default {
         'secondary': '#0D1D25',
         'ultra-dark': '#00111A',
         'gradient-dark': '#091E26',
+        'dark-dark-200': '#00070A'
       },
       fontFamily: {
         'sans': ['Roboto', 'sans-serif'],
