@@ -8,7 +8,10 @@ const HomePage = () => {
     <div className='bg-dark-blue min-h-screen'>
       <Header />
       <FeatureBanner />
-      <ProductCarousel products={products} /> {/* Usando o carrossel de produtos aqui */}
+      {/* Aplicando estilo inline para reduzir a margem superior */}
+      <div style={{ marginTop: '-40vh' }}> 
+        <ProductCarousel products={products} />
+      </div>
     </div>
   );
 };

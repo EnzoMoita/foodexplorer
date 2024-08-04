@@ -14,6 +14,7 @@ interface ProductCarouselProps {
 const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
   return (
     <div className="relative w-full">
+    <h1 className="text-3xl font-bold text-white my-4 text-center">Refeições</h1>
       <Swiper
         modules={[Navigation]}
         spaceBetween={10} // Menor espaço entre os slides
@@ -30,10 +31,10 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <button className="prev absolute left-0 z-10 top-1/2 -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-700 rounded-full p-2">
+      <button className="prev absolute left-0 z-10 top-1/2 -translate-y-1/2 text-white bg-dark-blue hover:bg-gray-700 rounded-full p-2">
         <ChevronLeft className="h-8 w-8" />
       </button>
-      <button className="next absolute right-0 z-10 top-1/2 -translate-y-1/2 text-white bg-gray-800 hover:bg-gray-700 rounded-full p-2">
+      <button className="next absolute right-0 z-10 top-1/2 -translate-y-1/2 text-white bg-dark-blue hover:bg-gray-700 rounded-full p-2">
         <ChevronRight className="h-8 w-8" />
       </button>
     </div>
