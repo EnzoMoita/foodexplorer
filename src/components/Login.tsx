@@ -1,4 +1,5 @@
-import logo from '../images/logo.svg'; // Importa a logo
+import logo from '../images/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -18,7 +19,7 @@ const Login = () => {
                         <input
                             type="email"
                             id="email"
-                            className="w-full px-4 py-2 bg-transparent border border-gray-600 rounded focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                            className="w-full px-6 py-4 bg-secondary border border-gray-600 rounded focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
                             placeholder="Exemplo: exemplo@exemplo.com.br"
                         />
                     </div>
@@ -27,14 +28,14 @@ const Login = () => {
                         <input
                             type="password"
                             id="password"
-                            className="w-full px-4 py-2 bg-transparent border border-gray-600 rounded focus:border-red-500 focus:ring focus:ring-red-500 focus:ring-opacity-50"
+                            className="w-full px-6 py-4 bg-secondary border border-gray-600 rounded focus:border-red-500 focus:ring focus:ring-red-500 focus:ring-opacity-50"
                             placeholder="No mínimo 6 caracteres"
                         />
                     </div>
                     <button type="submit" className="w-full px-6 py-4 text-md font-medium bg-tomato rounded hover:bg-red-700">Entrar</button>
                 </form>
                 <div className="text-center">
-                    <button className="text-sm hover:underline">Criar uma conta</button>
+                    <Link to="/register" className="text-sm hover:underline">Criar uma conta</Link> {/* Link para registro */}
                 </div>
             </div>
         </div>

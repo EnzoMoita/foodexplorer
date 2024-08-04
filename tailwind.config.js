@@ -9,6 +9,7 @@ export default {
         'dark-blue': '#000A0F',
         'dark-dark': '#001119', 
         'tomato': '#750310',
+        'secondary': '#0D1D25',
       },
       fontFamily: {
         'sans': ['Roboto', 'sans-serif'],
