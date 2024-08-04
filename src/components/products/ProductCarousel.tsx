@@ -13,7 +13,7 @@ interface ProductCarouselProps {
 
 const ProductCarousel: React.FC<ProductCarouselProps> = ({ products }) => {
   return (
-    <div className="relative w-full">
+    <div className="relative px-4 md:px-8 lg:px-16">
     <h1 className="text-3xl font-bold text-white my-4 text-center">Refeições</h1>
       <Swiper
         modules={[Navigation]}
